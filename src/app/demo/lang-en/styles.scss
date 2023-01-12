@@ -1,0 +1,10 @@
+@import 'node_modules/@alauda/common-snippet/styles/mixins';
+:host::ng-deep {
+  .swicth-div {
+    width: 100px;
+
+    @include lang-en {
+      width: 200px;
+    }
+  }
+}

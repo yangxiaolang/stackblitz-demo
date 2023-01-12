@@ -1,0 +1,30 @@
+<h1>各颜色模式下双色图标</h1>
+<span>尝试为 div.acl-colorful-icon 元素添加 hightlight 或 plain 查看效果</span>
+<div class="acl-colorful-icon">
+  <div class="tw-flex">
+    <div class="m-12">
+      <svg><use [attr.xlink:href]="'#bicolor-catalog'"></use></svg>
+    </div>
+    <div class="m-12">
+      <svg>
+        <use [attr.xlink:href]="'#bicolor-cloud_edge_collaboration'"></use>
+      </svg>
+    </div>
+    <div class="m-12">
+      <svg><use [attr.xlink:href]="'#bicolor-jump'"></use></svg>
+    </div>
+    <div class="m-12">
+      <svg><use [attr.xlink:href]="'#bicolor-data_services'"></use></svg>
+    </div>
+    <div class="m-12">
+      <svg>
+        <use [attr.xlink:href]="'#bicolor-vulnerability_scanning'"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="tw-flex mt-16">
+    <span>当前颜色模式：{{theme}}</span>
+    <button class="ml-16 tw-text-primary" (click)="changeTheme()">切换</button>
+  </div>
+</div>

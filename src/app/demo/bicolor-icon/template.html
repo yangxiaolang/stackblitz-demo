@@ -1,0 +1,30 @@
+<h1>双色图标</h1>
+<!-- 
+  @for $i from 0 through 8 {
+  .svg-font-#{$i} {
+    @include bicolor(
+      rgb(var(--aui-color-b-#{$i})),
+      rgb(var(--aui-color-b-#{8-$i}))
+    );
+  }
+  修改 svg-font 的数值查看效果
+} -->
+<div class="tw-flex svg-font-5">
+  <div class="m-12">
+    <svg><use [attr.xlink:href]="'#bicolor-catalog'"></use></svg>
+  </div>
+  <div class="m-12">
+    <svg>
+      <use [attr.xlink:href]="'#bicolor-cloud_edge_collaboration'"></use>
+    </svg>
+  </div>
+  <div class="m-12">
+    <svg><use [attr.xlink:href]="'#bicolor-jump'"></use></svg>
+  </div>
+  <div class="m-12">
+    <svg><use [attr.xlink:href]="'#bicolor-data_services'"></use></svg>
+  </div>
+  <div class="m-12">
+    <svg><use [attr.xlink:href]="'#bicolor-vulnerability_scanning'"></use></svg>
+  </div>
+</div>

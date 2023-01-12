@@ -1,0 +1,19 @@
+<!-- 
+  :host::ng-deep {
+  .swicth-div {
+    width: 100px;
+
+    @include lang-en {
+      width: 200px;
+    }
+  }
+}
+ -->
+<h1>英文模式下样式</h1>
+<div>
+  <div class="bg-b-2 h-48 swicth-div"></div>
+  <div class="tw-flex mt-16">
+    <span>当前语言环境：{{locale}}</span>
+    <button class="ml-16 tw-text-primary" (click)="changeLocale()">切换</button>
+  </div>
+</div>
